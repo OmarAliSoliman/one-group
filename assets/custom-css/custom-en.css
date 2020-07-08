@@ -1,3 +1,14 @@
+.lang {
+  display: inline-block;
+  position: absolute;
+  color: #000;
+  left: 74%;
+  border: 1px solid #000;
+  border-radius: 5px;
+  width: 50px;
+  text-align: center;
+}
+
 .modal-body {
   margin-top: 50px;
 }
@@ -279,8 +290,21 @@
   float: left;
 }
 
+@media (max-width: 1024px) {
+  .lang {
+    left: 70%;
+  }
+}
 @media (max-width: 800px) {
   .table-project .table .link-show {
     width: 100%;
+  }
+
+  .navbar-toggler-icon {
+    display: none;
+  }
+
+  .lang {
+    position: unset;
   }
 }

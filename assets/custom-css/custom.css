@@ -11,6 +11,22 @@
 
 .modal-body {
   margin-top: 50px;
+  position: relative;
+}
+
+.close-modal {
+  position: absolute;
+  color: #fff;
+  top: 0;
+  right: 30px;
+  cursor: pointer;
+}
+.close-modal i {
+  font-size: 15px;
+  transition: all 0.5s;
+}
+.close-modal:hover i {
+  color: #000;
 }
 
 .team-modal .section-header {
@@ -24,11 +40,22 @@
   border: 0;
   margin-bottom: 25px;
 }
+.team-modal .cards .card:hover .card-image img {
+  filter: grayscale(1);
+  border-radius: 0;
+}
+.team-modal .cards .card:hover .card-title {
+  color: #F6780F;
+}
+.team-modal .cards .card:hover .card-text {
+  color: #fff;
+}
 .team-modal .cards .card-image img {
   width: 100px;
   height: 100px;
   margin: auto;
   border-radius: 50%;
+  transition: all 0.5s;
 }
 .team-modal .cards .card-body {
   padding: 0;
@@ -38,11 +65,13 @@
   font-size: 18px;
   color: #fff;
   margin: 0;
+  transition: all 0.5s;
 }
 .team-modal .cards .card-body .card-text {
   font-size: 14px;
   color: #F6780F;
   margin: 0;
+  transition: all 0.5s;
 }
 
 .investment-modal .cards .card {
@@ -57,6 +86,7 @@
   padding: 10px;
   line-height: 130px;
   text-align: center;
+  transition: all 0.5s;
 }
 .investment-modal .cards .card .card-image img {
   background-color: transparent !important;
@@ -67,6 +97,18 @@
 }
 .investment-modal .cards .card .card-body .card-title {
   font-size: 16px;
+}
+.investment-modal .cards .card:hover .card-image {
+  border-radius: 0;
+}
+.investment-modal .cards .card:hover .card-image img {
+  filter: grayscale(1);
+}
+.investment-modal .cards .card:hover .card-title {
+  color: #F6780F;
+}
+.investment-modal .cards .card:hover .card-text {
+  color: #fff;
 }
 
 .agents-modal .cards .card .card-image {

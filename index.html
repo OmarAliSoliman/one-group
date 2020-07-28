@@ -16,7 +16,8 @@
   <!-- build:css assets/css/libs/libs.min.css-->
   <link href="assets/css/vendors/bootstrap/bootstrap.min.css" rel="stylesheet">
   <link href="assets/css/libs/fancybox.min.css" rel="stylesheet">
-  <link href="assets/css/libs/slick.min.css" rel="stylesheet">
+  <link href="assets/css/libs/slick.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/libs/slick-theme.css">
   <link href="assets/css/libs/aos.min.css" rel="stylesheet">
   <link href="assets/css/libs/font-awesome.min.css" rel="stylesheet">
 
@@ -48,8 +49,20 @@
   <script src="assets/js/libs/fancybox/jquery.fancybox.min.js"></script>
   <script src="../src/assets/js/libs/jquery.nicescroll.min.js"></script>
   <script src="assets/js/script.min.js"></script>
-  <script src="../src/assets/js/custom.js"></script>
+  <script src="./assets/js/customjs.js"></script>
   <!-- endbuild-->
+
+
+  <style>
+    body {
+      background-color: #F6F6F6;
+    }
+
+    #home-content #boxs-container #main-box.active:after {
+      background: rgba(246, 246, 246, 0.6);
+    }
+  </style>
+
 </head>
 
 <body>
@@ -88,7 +101,7 @@
                 <a class="nav-link" href="#" data-toggle="" data-target="">ماذا نقدم ؟</a>
               </li>
               <li class="nav-item" data-tabs="tab-2">
-                <a class="nav-link" href="#" data-toggle="" data-target="" >كسبنا ثقتهم</a>
+                <a class="nav-link" href="#" data-toggle="" data-target="">كسبنا ثقتهم</a>
               </li>
               <li class="nav-item" data-tabs="tab-4">
                 <a class="nav-link" href="#" data-toggle="modal" data-target="#page-16-modal">اتصل بنا</a>
@@ -140,6 +153,9 @@
                     <div class="name ico-white">
                       <span>التعريف بالمجموعة</span>
                     </div>
+                    <button type="button" class="close close-modal" data-dismiss="modal" aria-label="Close">
+                      <i aria-hidden="true" class="fa fa-times"></i>
+                    </button>
                     <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل
                       الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها
                       تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف
@@ -157,10 +173,13 @@
                     <div class="name ico-white">
                       <span> فريق العمل</span>
                     </div>
+                    <button type="button" class="close close-modal" data-dismiss="modal" aria-label="Close">
+                      <i aria-hidden="true" class="fa fa-times"></i>
+                    </button>
                     <h6 class="section-header">أعضاء المجلس الإستشاري وفريق العمل في مجموعة ون</h6>
-                    <div class="cards">
+                    <div class="cards" id="desktop-cards">
                       <div class="row">
-                        <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="col-6 col-md-6 col-lg-3">
                           <div class="card">
                             <div class="card-image">
                               <img src="./assets/images/user.jpg" alt="">
@@ -172,7 +191,7 @@
                           </div>
                         </div>
                         <!-- REBEAT -->
-                        <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="col-6 col-md-6 col-lg-3">
                           <div class="card">
                             <div class="card-image">
                               <img src="./assets/images/user3.jpg" alt="">
@@ -184,7 +203,7 @@
                           </div>
                         </div>
                         <!-- REBEAT -->
-                        <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="col-6 col-md-6 col-lg-3">
                           <div class="card">
                             <div class="card-image">
                               <img src="./assets/images/user.jpg" alt="">
@@ -196,7 +215,7 @@
                           </div>
                         </div>
                         <!-- REBEAT -->
-                        <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="col-6 col-md-6 col-lg-3">
                           <div class="card">
                             <div class="card-image">
                               <img src="./assets/images/user3.jpg" alt="">
@@ -208,7 +227,7 @@
                           </div>
                         </div>
                         <!-- REBEAT -->
-                        <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="col-6 col-md-6 col-lg-3">
                           <div class="card">
                             <div class="card-image">
                               <img src="./assets/images/user3.jpg" alt="">
@@ -220,7 +239,7 @@
                           </div>
                         </div>
                         <!-- REBEAT -->
-                        <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="col-6 col-md-6 col-lg-3">
                           <div class="card">
                             <div class="card-image">
                               <img src="./assets/images/user.jpg" alt="">
@@ -232,7 +251,7 @@
                           </div>
                         </div>
                         <!-- REBEAT -->
-                        <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="col-6 col-md-6 col-lg-3">
                           <div class="card">
                             <div class="card-image">
                               <img src="./assets/images/user3.jpg" alt="">
@@ -244,7 +263,7 @@
                           </div>
                         </div>
                         <!-- REBEAT -->
-                        <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="col-6 col-md-6 col-lg-3">
                           <div class="card">
                             <div class="card-image">
                               <img src="./assets/images/user3.jpg" alt="">
@@ -257,6 +276,35 @@
                         </div>
                       </div>
                     </div>
+
+                    <!-- mobile cards -->
+                    <!-- <div class="cards" id="mobile-cards">
+                      <div class="mobile-cards-slider">
+                        <div class="slider-item">
+                          <div class="card">
+                            <div class="card-image">
+                              <img src="./assets/images/user.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">د/احمد القاسم</h5>
+                              <p class="card-text">رئيس مجلس الادارة</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="slider-item">
+                          <div class="card">
+                            <div class="card-image">
+                              <img src="./assets/images/user.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">د/احمد القاسم</h5>
+                              <p class="card-text">رئيس مجلس الادارة</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div> -->
+
                   </div>
                 </div>
               </div>
@@ -269,10 +317,13 @@
                     <div class="name ico-white">
                       <span>استثمارات المجموعة</span>
                     </div>
+                    <button type="button" class="close close-modal" data-dismiss="modal" aria-label="Close">
+                      <i aria-hidden="true" class="fa fa-times"></i>
+                    </button>
                     <h6 class="section-header">جميع الاستثمارات التي قامت بها مجموعة ون مع شركائها المستثمرين</h6>
                     <div class="cards">
                       <div class="row">
-                        <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="col-6 col-md-6 col-lg-3">
                           <div class="card">
                             <div class="card-image">
                               <img src="./assets/images/inves1.png" alt="">
@@ -283,7 +334,7 @@
                           </div>
                         </div>
                         <!-- REBEAT -->
-                        <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="col-6 col-md-6 col-lg-3">
                           <div class="card">
                             <div class="card-image">
                               <img src="./assets/images/inves2.png" alt="">
@@ -294,7 +345,7 @@
                           </div>
                         </div>
                         <!-- REBEAT -->
-                        <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="col-6 col-md-6 col-lg-3">
                           <div class="card">
                             <div class="card-image">
                               <img src="./assets/images/inves3.png" alt="">
@@ -305,7 +356,7 @@
                           </div>
                         </div>
                         <!-- REBEAT -->
-                        <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="col-6 col-md-6 col-lg-3">
                           <div class="card">
                             <div class="card-image">
                               <img src="./assets/images/inves4.png" alt="">
@@ -316,7 +367,7 @@
                           </div>
                         </div>
                         <!-- REBEAT -->
-                        <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="col-6 col-md-6 col-lg-3">
                           <div class="card">
                             <div class="card-image">
                               <img src="./assets/images/inves1.png" alt="">
@@ -327,7 +378,7 @@
                           </div>
                         </div>
                         <!-- REBEAT -->
-                        <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="col-6 col-md-6 col-lg-3">
                           <div class="card">
                             <div class="card-image">
                               <img src="./assets/images/inves2.png" alt="">
@@ -338,7 +389,7 @@
                           </div>
                         </div>
                         <!-- REBEAT -->
-                        <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="col-6 col-md-6 col-lg-3">
                           <div class="card">
                             <div class="card-image">
                               <img src="./assets/images/inves3.png" alt="">
@@ -349,7 +400,7 @@
                           </div>
                         </div>
                         <!-- REBEAT -->
-                        <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="col-6 col-md-6 col-lg-3">
                           <div class="card">
                             <div class="card-image">
                               <img src="./assets/images/inves4.png" alt="">
@@ -373,6 +424,9 @@
                     <div class="name ico-white">
                       <span> أذرع المجموعة</span>
                     </div>
+                    <button type="button" class="close close-modal" data-dismiss="modal" aria-label="Close">
+                      <i aria-hidden="true" class="fa fa-times"></i>
+                    </button>
                     <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل
                       الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها
                       تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف
@@ -421,6 +475,9 @@
                     <div class="name ico-white">
                       <span>التعاون مع الجهات</span>
                     </div>
+                    <button type="button" class="close close-modal" data-dismiss="modal" aria-label="Close">
+                      <i aria-hidden="true" class="fa fa-times"></i>
+                    </button>
                     <div class="card">
                       <div class="card-image">
                         <img src="./assets/images/elta3awen.png" alt="">
@@ -456,9 +513,12 @@
                     <div class="name ico-white">
                       <span> أبرز العملاء</span>
                     </div>
+                    <button type="button" class="close close-modal" data-dismiss="modal" aria-label="Close">
+                      <i aria-hidden="true" class="fa fa-times"></i>
+                    </button>
                     <div class="cards">
                       <div class="row">
-                        <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="col-6 col-md-6 col-lg-3">
                           <div class="card">
                             <div class="card-image">
                               <img src="./assets/images/agent1.png" alt="">
@@ -469,7 +529,7 @@
                           </div>
                         </div>
                         <!-- REBEAT -->
-                        <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="col-6 col-md-6 col-lg-3">
                           <div class="card">
                             <div class="card-image">
                               <img src="./assets/images/agent2.png" alt="">
@@ -480,7 +540,7 @@
                           </div>
                         </div>
                         <!-- REBEAT -->
-                        <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="col-6 col-md-6 col-lg-3">
                           <div class="card">
                             <div class="card-image">
                               <img src="./assets/images/agent3.png" alt="">
@@ -491,7 +551,7 @@
                           </div>
                         </div>
                         <!-- REBEAT -->
-                        <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="col-6 col-md-6 col-lg-3">
                           <div class="card">
                             <div class="card-image">
                               <img src="./assets/images/agent4.png" alt="">
@@ -502,7 +562,7 @@
                           </div>
                         </div>
                         <!-- REBEAT -->
-                        <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="col-6 col-md-6 col-lg-3">
                           <div class="card">
                             <div class="card-image">
                               <img src="./assets/images/agent1.png" alt="">
@@ -513,7 +573,7 @@
                           </div>
                         </div>
                         <!-- REBEAT -->
-                        <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="col-6 col-md-6 col-lg-3">
                           <div class="card">
                             <div class="card-image">
                               <img src="./assets/images/agent2.png" alt="">
@@ -524,7 +584,7 @@
                           </div>
                         </div>
                         <!-- REBEAT -->
-                        <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="col-6 col-md-6 col-lg-3">
                           <div class="card">
                             <div class="card-image">
                               <img src="./assets/images/agent3.png" alt="">
@@ -535,7 +595,7 @@
                           </div>
                         </div>
                         <!-- REBEAT -->
-                        <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="col-6 col-md-6 col-lg-3">
                           <div class="card">
                             <div class="card-image">
                               <img src="./assets/images/agent4.png" alt="">
@@ -546,7 +606,7 @@
                           </div>
                         </div>
                         <!-- REBEAT -->
-                        <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="col-6 col-md-6 col-lg-3">
                           <div class="card">
                             <div class="card-image">
                               <img src="./assets/images/agent4.png" alt="">
@@ -557,7 +617,7 @@
                           </div>
                         </div>
                         <!-- REBEAT -->
-                        <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="col-6 col-md-6 col-lg-3">
                           <div class="card">
                             <div class="card-image">
                               <img src="./assets/images/agent4.png" alt="">
@@ -568,7 +628,7 @@
                           </div>
                         </div>
                         <!-- REBEAT -->
-                        <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="col-6 col-md-6 col-lg-3">
                           <div class="card">
                             <div class="card-image">
                               <img src="./assets/images/agent4.png" alt="">
@@ -579,7 +639,7 @@
                           </div>
                         </div>
                         <!-- REBEAT -->
-                        <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="col-6 col-md-6 col-lg-3">
                           <div class="card">
                             <div class="card-image">
                               <img src="./assets/images/agent4.png" alt="">
@@ -590,7 +650,7 @@
                           </div>
                         </div>
                         <!-- REBEAT -->
-                        <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="col-6 col-md-6 col-lg-3">
                           <div class="card">
                             <div class="card-image">
                               <img src="./assets/images/agent4.png" alt="">
@@ -601,7 +661,7 @@
                           </div>
                         </div>
                         <!-- REBEAT -->
-                        <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="col-6 col-md-6 col-lg-3">
                           <div class="card">
                             <div class="card-image">
                               <img src="./assets/images/agent4.png" alt="">
@@ -612,7 +672,7 @@
                           </div>
                         </div>
                         <!-- REBEAT -->
-                        <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="col-6 col-md-6 col-lg-3">
                           <div class="card">
                             <div class="card-image">
                               <img src="./assets/images/agent4.png" alt="">
@@ -623,7 +683,7 @@
                           </div>
                         </div>
                         <!-- REBEAT -->
-                        <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="col-6 col-md-6 col-lg-3">
                           <div class="card">
                             <div class="card-image">
                               <img src="./assets/images/agent4.png" alt="">
@@ -647,6 +707,9 @@
                     <div class="name ico-white">
                       <span> أبرز المشاريع</span>
                     </div>
+                    <button type="button" class="close close-modal" data-dismiss="modal" aria-label="Close">
+                      <i aria-hidden="true" class="fa fa-times"></i>
+                    </button>
                     <div class="table-responsive">
                       <table class="table">
                         <thead>
@@ -730,6 +793,9 @@
                     <div class="name ico-white">
                       <span> عدد المشاريع</span>
                     </div>
+                    <button type="button" class="close close-modal" data-dismiss="modal" aria-label="Close">
+                      <i aria-hidden="true" class="fa fa-times"></i>
+                    </button>
                     <div class="card">
                       <div class="card-image">
                         <img src="./assets/images/number-project.png" alt="">
@@ -830,6 +896,9 @@
                     <div class="name ico-white">
                       <span> منهجية العمل</span>
                     </div>
+                    <button type="button" class="close close-modal" data-dismiss="modal" aria-label="Close">
+                      <i aria-hidden="true" class="fa fa-times"></i>
+                    </button>
                     <div class="card">
                       <h5 class="card-title">الاستثمار في قطاع الأعمال والتسويق</h5>
                       <div class="card-image">
@@ -866,6 +935,9 @@
                     <div class="name ico-white">
                       <span>طريقة العمل</span>
                     </div>
+                    <button type="button" class="close close-modal" data-dismiss="modal" aria-label="Close">
+                      <i aria-hidden="true" class="fa fa-times"></i>
+                    </button>
                     <div class="card">
                       <h6 class="card-title">التخطيط وإدارة العقود الاتصالية والتسويقية</h6>
                       <div class="card-image">
@@ -902,6 +974,9 @@
                     <div class="name ico-white">
                       <span> الإستشارات</span>
                     </div>
+                    <button type="button" class="close close-modal" data-dismiss="modal" aria-label="Close">
+                      <i aria-hidden="true" class="fa fa-times"></i>
+                    </button>
                     <div class="card">
                       <h6 class="card-title">التخطيط وإدارة العقود الاتصالية والتسويقية</h6>
                       <div class="card-image">
@@ -938,6 +1013,9 @@
                     <div class="name ico-white">
                       <span> الخدمات الأخرى بالكامل</span>
                     </div>
+                    <button type="button" class="close close-modal" data-dismiss="modal" aria-label="Close">
+                      <i aria-hidden="true" class="fa fa-times"></i>
+                    </button>
                     <div class="card">
                       <h6 class="card-title">التخطيط وإدارة العقود الاتصالية والتسويقية</h6>
                       <div class="card-image">
@@ -971,6 +1049,9 @@
             <div class="name ico-4">
               <span> تواصل معنا</span>
             </div>
+            <button type="button" class="close close-modal" data-dismiss="modal" aria-label="Close">
+              <i aria-hidden="true" class="fa fa-times"></i>
+            </button>
             <ul>
               <li>
                 <a href="#" data-toggle="modal" data-target="#page-13-modal">
@@ -1004,6 +1085,9 @@
                     <div class="name ico-white">
                       <span> استقطاب الكفاءات</span>
                     </div>
+                    <button type="button" class="close close-modal" data-dismiss="modal" aria-label="Close">
+                      <i aria-hidden="true" class="fa fa-times"></i>
+                    </button>
                     <form action="">
                       <div class="row">
                         <div class="col-sm-12 col-lg-12">
@@ -1056,6 +1140,9 @@
                     <div class="name ico-white">
                       <span>نوعية التعاون</span>
                     </div>
+                    <button type="button" class="close close-modal" data-dismiss="modal" aria-label="Close">
+                      <i aria-hidden="true" class="fa fa-times"></i>
+                    </button>
                     <form action="">
                       <div class="row">
                         <div class="col-sm-12 col-lg-12">
@@ -1093,6 +1180,9 @@
                     <div class="name ico-white">
                       <span>حجز موعد</span>
                     </div>
+                    <button type="button" class="close close-modal" data-dismiss="modal" aria-label="Close">
+                      <i aria-hidden="true" class="fa fa-times"></i>
+                    </button>
                     <form action="">
                       <div class="row">
                         <div class="col-sm-12 col-lg-12">
@@ -1134,6 +1224,9 @@
                     <div class="name ico-white">
                       <span> أرقام التواصل</span>
                     </div>
+                    <button type="button" class="close close-modal" data-dismiss="modal" aria-label="Close">
+                      <i aria-hidden="true" class="fa fa-times"></i>
+                    </button>
                     <div class="contact-information">
                       <div class="row">
                         <div class="col-sm-12 col-md-12 col-lg-6">
@@ -1230,6 +1323,18 @@
   </section>
 
   <footer></footer>
+
+
+  <!-- <script>
+    var closeModalBtn = document.getElementById('close-the-modal');
+    closeModalBtn.addEventListener('click', ()=>{
+      // console.log(closeModalBtn.parentElement.parentElement.parentElement.parentElement);
+      let modalParent = closeModalBtn.parentElement.parentElement.parentElement.parentElement;
+      modalParent.classList.add('hide');
+      modalParent.classList.remove('show');
+      modalParent.style.display="none";
+    })
+  </script> -->
 </body>
 
 </html>

@@ -55,18 +55,18 @@
 
   <style>
     body {
-      background: url('./assets/images/header.png');
+      background: #F6F6F6;
       background-position: center;
       background-size: cover;
     }
 
     #home-content #boxs-container #main-box.active:after {
-      background: transparent;
+      background: #F6F6F6;
       opacity: 0.5;
-         /* لو كانت الخلفيه لون هنا هنغير الباكجراوند لنفس  ب 
+      /* لو كانت الخلفيه لون هنا هنغير الباكجراوند لنفس  ب 
       اللون */
 
-          /* لو كانت الخلفيه صورة هنا هنغير الباكجراوند لنفس  ب 
+      /* لو كانت الخلفيه صورة هنا هنغير الباكجراوند لنفس  ب 
       transparent */
     }
   </style>
@@ -804,27 +804,50 @@
                     <button type="button" class="close close-modal" data-dismiss="modal" aria-label="Close">
                       <i aria-hidden="true" class="fa fa-times"></i>
                     </button>
-                    <div class="card">
-                      <div class="card-image">
-                        <img src="./assets/images/number-project.png" alt="">
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">
-                          هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر
-                          إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما،
-                          عليك أن تتحقق أولاً أن ليس هناك أي كلمات أو عبارات محرجة أو غير لائقة مخبأة في هذا النص. بينما
-                          تعمل جميع مولّدات نصوص لوريم إيبسوم على الإنترنت على إعادة تكرار مقاطع من نص لوريم إيبسوم نفسه
-                          عدة مرات بما تتطلبه الحاجة، يقوم مولّدنا هذا باستخدام كلمات من قاموس يحوي على أكثر من 200 كلمة
-                          لا تينية
-                        </p>
-                        <p class="card-text">
-                          هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر
-                          إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما،
-                          عليك أن تتحقق أولاً أن ليس هناك أي كلمات أو عبارات محرجة أو غير لائقة مخبأة في هذا النص. بينما
-                          تعمل جميع مولّدات نصوص لوريم إيبسوم على الإنترنت على إعادة تكرار مقاطع من نص لوريم إيبسوم نفسه
-                          عدة مرات بما تتطلبه الحاجة، يقوم مولّدنا هذا باستخدام كلمات من قاموس يحوي على أكثر من 200 كلمة
-                          لا تينية
-                        </p>
+                    <div class="number-of-product-row">
+                      <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                          <div class="card">
+                            <span class="card-number">01</span>
+                            <a href="" class="card-title">اسم المشروع هنا</a>
+                          </div>
+                        </div>
+                        <!-- REBEAT -->
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                          <div class="card">
+                            <span class="card-number">02</span>
+                            <a href="" class="card-title">اسم المشروع هنا</a>
+                          </div>
+                        </div>
+                        <!-- REBEAT -->
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                          <div class="card">
+                            <span class="card-number">03</span>
+                            <a href="" class="card-title">اسم المشروع هنا</a>
+                          </div>
+                        </div>
+                        <!-- REBEAT -->
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                          <div class="card">
+                            <span class="card-number">04</span>
+                            <a href="" class="card-title">اسم المشروع هنا</a>
+                          </div>
+                        </div>
+                        <!-- REBEAT -->
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                          <div class="card">
+                            <span class="card-number">05</span>
+                            <a href="" class="card-title">اسم المشروع هنا</a>
+                          </div>
+                        </div>
+                        <!-- REBEAT -->
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                          <div class="card">
+                            <span class="card-number">06</span>
+                            <a href="" class="card-title">اسم المشروع هنا</a>
+                          </div>
+                        </div>
+                        <!-- REBEAT -->
                       </div>
                     </div>
                   </div>
@@ -1330,19 +1353,30 @@
     </div>
   </section>
 
+
   <footer></footer>
 
 
-  <!-- <script>
-    var closeModalBtn = document.getElementById('close-the-modal');
-    closeModalBtn.addEventListener('click', ()=>{
-      // console.log(closeModalBtn.parentElement.parentElement.parentElement.parentElement);
-      let modalParent = closeModalBtn.parentElement.parentElement.parentElement.parentElement;
-      modalParent.classList.add('hide');
-      modalParent.classList.remove('show');
-      modalParent.style.display="none";
+  <!-- floatin -->
+  <div id="floating">
+    <i class="fa fa-chevron-up"></i>
+  </div>
+
+  <script>
+      $(window).scroll(() => {
+    if ($(this).scrollTop() > 20) {
+      $('#floating').css('opacity', '0.8');
+    } else {
+      $('#floating').css('opacity', '0');
+    }
+  })
+
+    $('#floating').click(() => {
+      $('html, body').animate({
+        scrollTop: 0
+      }, 50);
     })
-  </script> -->
+  </script>
 </body>
 
 </html>

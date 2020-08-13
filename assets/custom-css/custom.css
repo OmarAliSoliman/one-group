@@ -332,6 +332,56 @@
   float: right;
 }
 
+
+.number-of-product-row .card{
+  background-color: #fff;
+  padding: 10px;
+  border: 0;
+  /* padding-top: 0; */
+  margin-bottom: 20px;
+}
+
+.number-of-product-row .card-number{
+  text-align: center;
+  font-size: 60px;
+  color: #888;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: auto;
+  border: 1px solid #DDD;
+}
+
+.number-of-product-row .card-title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 3px;
+  color: #000;
+  text-decoration: none;
+}
+
+#floating {
+  position: fixed;
+  z-index: 999;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 5px;
+  bottom: 15px;
+  right: 20px;
+  cursor: pointer;
+  background-color: #F1796B;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+#floating i {
+  color: #fff;
+}
+
 @media (max-width: 1024px) {
   .lang {
     right: 70%;

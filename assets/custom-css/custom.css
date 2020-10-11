@@ -382,6 +382,27 @@
   color: #fff;
 }
 
+.closed-page-body{
+  /* width: 100%;
+  height: 100%;
+  border: 1px solid #000; */
+  position: relative;
+}
+
+.closed-page .logo{
+  margin-top: 150px;
+  padding: 50px;
+}
+
+.closed-page .logo img{
+  width: auto;
+  max-width: 90px;
+}
+
+.closed-page .logo h5{
+  font-size: 50px;
+}
+
 @media (max-width: 1024px) {
   .lang {
     right: 70%;

@@ -46,7 +46,7 @@
     <script src="assets/js/libs/slick.min.js"></script>
     <script src="assets/js/libs/aos.min.js"></script>
     <script src="assets/js/libs/fancybox/jquery.fancybox.min.js"></script>
-    <script src="../src/assets/js/libs/jquery.nicescroll.min.js"></script>
+    <!-- <script src="./assets/js/libs/"></script>   -->
     <script src="assets/js/script.min.js"></script>
     <script src="./assets/js/customjs.js"></script>
     <!-- endbuild-->
@@ -82,5 +82,17 @@
     </div>
   </div>
   
+
+  <script>
+    $(window).scroll(() => {
+  if ($(this).scrollTop() > 20) {
+    $('#floating').css('opacity', '0.8');
+  } else {
+    $('#floating').css('opacity', '0');
+  }
+})
+
+</script>
+
 </body>
 </html>
